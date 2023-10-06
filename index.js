@@ -4,7 +4,15 @@ function isPalindrome(word) {
 
 /* 
   Add your pseudocode here
+  
 */
+function isPalindrome(str) {
+
+  str = str.replace(/\s/g, '').toLowerCase();
+  
+ return str === str.split('').reverse().join('');
+}
+
 
 /*
   Add written explanation of your solution here
